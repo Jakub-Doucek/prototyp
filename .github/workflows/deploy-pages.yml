@@ -81,3 +81,14 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ${{ steps.export.outputs.build_directory }}
+
+deploy:
+  needs: export_game
+  runs-on: ubuntu-latest
+  steps:
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
+
+    - name: Print site URL
+      run: echo "Deployed to ${{ steps.deployment.outputs.page_url }}"
