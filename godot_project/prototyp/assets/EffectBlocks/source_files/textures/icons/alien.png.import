@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://gh7ihcvhqbps"
-path="res://.godot/imported/alien.png-58d666e61cf4eef2870b61f6f7e440d4.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/alien.png"
-dest_files=["res://.godot/imported/alien.png-58d666e61cf4eef2870b61f6f7e440d4.ctex"]
 
 [params]
 

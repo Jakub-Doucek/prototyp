@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bbihvvad82rd5"
-path="res://.godot/imported/Undead.glb-663950397e09661bb5e69ce8e95955d7.scn"
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/meshes/props/Undead.glb"
-dest_files=["res://.godot/imported/Undead.glb-663950397e09661bb5e69ce8e95955d7.scn"]
 
 [params]
 

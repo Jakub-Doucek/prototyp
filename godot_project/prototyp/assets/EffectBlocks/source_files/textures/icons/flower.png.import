@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://x1x50wqofmno"
-path="res://.godot/imported/flower.png-35c00d8d00f72c72da34c1ba1c6d69e8.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/flower.png"
-dest_files=["res://.godot/imported/flower.png-35c00d8d00f72c72da34c1ba1c6d69e8.ctex"]
 
 [params]
 

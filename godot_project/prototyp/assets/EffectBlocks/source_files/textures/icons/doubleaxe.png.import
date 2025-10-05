@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btmt7osissmus"
-path="res://.godot/imported/doubleaxe.png-67483275aa142b1fc83c835a52052e9f.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/doubleaxe.png"
-dest_files=["res://.godot/imported/doubleaxe.png-67483275aa142b1fc83c835a52052e9f.ctex"]
 
 [params]
 

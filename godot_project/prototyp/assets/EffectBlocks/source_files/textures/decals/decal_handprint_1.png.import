@@ -3,16 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cbom05kvryu2m"
-path.s3tc="res://.godot/imported/decal_handprint_1.png-1183dad50b8274262acbdd612b3faa2e.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/decals/decal_handprint_1.png"
-dest_files=["res://.godot/imported/decal_handprint_1.png-1183dad50b8274262acbdd612b3faa2e.s3tc.ctex"]
 
 [params]
 

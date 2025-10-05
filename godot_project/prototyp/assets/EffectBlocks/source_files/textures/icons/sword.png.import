@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8ifvl2i1meyv"
-path="res://.godot/imported/sword.png-2f25456b28f5516d5cb08e253c03f67b.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/sword.png"
-dest_files=["res://.godot/imported/sword.png-2f25456b28f5516d5cb08e253c03f67b.ctex"]
 
 [params]
 

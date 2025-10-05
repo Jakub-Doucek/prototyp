@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://rdfykdt5hnvu"
-path="res://.godot/imported/Tonardo.glb-f3784f7f5f59c7349cdbe09e1d38ac35.scn"
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/meshes/Tonardo.glb"
-dest_files=["res://.godot/imported/Tonardo.glb-f3784f7f5f59c7349cdbe09e1d38ac35.scn"]
 
 [params]
 

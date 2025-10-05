@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bexljcgkm03tw"
-path="res://.godot/imported/ar15.png-18f8b6544c5c6a95ed110104b21820b8.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/ar15.png"
-dest_files=["res://.godot/imported/ar15.png-18f8b6544c5c6a95ed110104b21820b8.ctex"]
 
 [params]
 

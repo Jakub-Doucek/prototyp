@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b01wwnwe41g4a"
-path="res://.godot/imported/palace.png-65ac17892d5c7d60f35c2538134e119d.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/palace.png"
-dest_files=["res://.godot/imported/palace.png-65ac17892d5c7d60f35c2538134e119d.ctex"]
 
 [params]
 

@@ -3,16 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ljdwjppfnunq"
-path.s3tc="res://.godot/imported/skull.png-0a5b2a21961473f3bb159d1990185b03.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/skull.png"
-dest_files=["res://.godot/imported/skull.png-0a5b2a21961473f3bb159d1990185b03.s3tc.ctex"]
 
 [params]
 

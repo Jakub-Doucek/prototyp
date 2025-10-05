@@ -3,16 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://be5acis1q4v56"
-path.s3tc="res://.godot/imported/down_arrow.png-6661dc6d03c727064eb1ace3fb4d6d6d.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/down_arrow.png"
-dest_files=["res://.godot/imported/down_arrow.png-6661dc6d03c727064eb1ace3fb4d6d6d.s3tc.ctex"]
 
 [params]
 

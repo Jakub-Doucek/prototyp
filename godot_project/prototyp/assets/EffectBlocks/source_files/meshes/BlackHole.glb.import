@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://da7vrmv6hbm0x"
-path="res://.godot/imported/BlackHole.glb-ce529eb7bcf066a14cfdd0d76d6d042b.scn"
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/meshes/BlackHole.glb"
-dest_files=["res://.godot/imported/BlackHole.glb-ce529eb7bcf066a14cfdd0d76d6d042b.scn"]
 
 [params]
 

@@ -3,16 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b01163xmgmypi"
-path.s3tc="res://.godot/imported/decal_crack_3.png-6bb7712803efcfe7b0d7c9ed394f3c4c.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/decals/decal_crack_3.png"
-dest_files=["res://.godot/imported/decal_crack_3.png-6bb7712803efcfe7b0d7c9ed394f3c4c.s3tc.ctex"]
 
 [params]
 

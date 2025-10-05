@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bx3qr0isk6em1"
-path="res://.godot/imported/food.png-82d363627ba85901a673fcb9ff498a7e.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/food.png"
-dest_files=["res://.godot/imported/food.png-82d363627ba85901a673fcb9ff498a7e.ctex"]
 
 [params]
 

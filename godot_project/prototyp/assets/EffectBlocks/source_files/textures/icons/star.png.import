@@ -3,16 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxi3r0ixcouwu"
-path.s3tc="res://.godot/imported/star.png-e60164ab82b9bcda21d492ce3597050f.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/star.png"
-dest_files=["res://.godot/imported/star.png-e60164ab82b9bcda21d492ce3597050f.s3tc.ctex"]
 
 [params]
 

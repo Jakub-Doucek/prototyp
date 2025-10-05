@@ -3,16 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddxqnj3rbpdn2"
-path.s3tc="res://.godot/imported/muzzle_flash_fps_1.png-f49434d2ac0b0a2c5c0c0922b6497d4d.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/muzzleflash/muzzle_flash_fps_1.png"
-dest_files=["res://.godot/imported/muzzle_flash_fps_1.png-f49434d2ac0b0a2c5c0c0922b6497d4d.s3tc.ctex"]
 
 [params]
 

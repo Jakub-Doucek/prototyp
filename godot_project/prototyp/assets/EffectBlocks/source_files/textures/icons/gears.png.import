@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://coxfumbs5nh3j"
-path="res://.godot/imported/gears.png-2f8f440372496063dc22de5c9727862f.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/gears.png"
-dest_files=["res://.godot/imported/gears.png-2f8f440372496063dc22de5c9727862f.ctex"]
 
 [params]
 

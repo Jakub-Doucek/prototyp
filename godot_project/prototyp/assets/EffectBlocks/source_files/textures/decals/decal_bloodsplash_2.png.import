@@ -3,16 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ea4lq70g4oui"
-path.s3tc="res://.godot/imported/decal_bloodsplash_2.png-6a172668a2c7256ca46431f82feb7fcf.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/decals/decal_bloodsplash_2.png"
-dest_files=["res://.godot/imported/decal_bloodsplash_2.png-6a172668a2c7256ca46431f82feb7fcf.s3tc.ctex"]
 
 [params]
 

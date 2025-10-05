@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dnilnyhr74fc0"
-path="res://.godot/imported/mechanic.png-f5dcc3ef29ae73485e9da09904d177cd.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/mechanic.png"
-dest_files=["res://.godot/imported/mechanic.png-f5dcc3ef29ae73485e9da09904d177cd.ctex"]
 
 [params]
 

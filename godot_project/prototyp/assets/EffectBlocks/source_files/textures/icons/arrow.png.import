@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dq0cyv4c8skxl"
-path="res://.godot/imported/arrow.png-bf3afef40efb9499f019d71d5ff68883.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/arrow.png"
-dest_files=["res://.godot/imported/arrow.png-bf3afef40efb9499f019d71d5ff68883.ctex"]
 
 [params]
 

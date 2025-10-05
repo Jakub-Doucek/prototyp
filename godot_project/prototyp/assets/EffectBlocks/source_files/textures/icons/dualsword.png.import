@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cco85s8js050h"
-path="res://.godot/imported/dualsword.png-2d83e2a607f2ba5266008ea3685da485.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/dualsword.png"
-dest_files=["res://.godot/imported/dualsword.png-2d83e2a607f2ba5266008ea3685da485.ctex"]
 
 [params]
 

@@ -3,16 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1e7hll0hnmad"
-path.s3tc="res://.godot/imported/circle_1.png-1b392aa090b0f17bb2416c16a426e403.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/circle_1.png"
-dest_files=["res://.godot/imported/circle_1.png-1b392aa090b0f17bb2416c16a426e403.s3tc.ctex"]
 
 [params]
 

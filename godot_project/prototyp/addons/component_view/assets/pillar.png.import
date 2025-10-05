@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxv5sfl55d3h7"
-path="res://.godot/imported/pillar.png-9c753c0296cd31f017332716948afe46.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://addons/component_view/assets/pillar.png"
-dest_files=["res://.godot/imported/pillar.png-9c753c0296cd31f017332716948afe46.ctex"]
 
 [params]
 

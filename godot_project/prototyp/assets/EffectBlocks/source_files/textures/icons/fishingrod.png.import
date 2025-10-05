@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://wkf8esw33my8"
-path="res://.godot/imported/fishingrod.png-cd01154d7ce131f48aa9fdb62bd1196c.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/fishingrod.png"
-dest_files=["res://.godot/imported/fishingrod.png-cd01154d7ce131f48aa9fdb62bd1196c.ctex"]
 
 [params]
 

@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://4dh8ucga3ln2"
-path="res://.godot/imported/WormHole.glb-071972489eb7468a202174ce915f1aa3.scn"
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/meshes/WormHole.glb"
-dest_files=["res://.godot/imported/WormHole.glb-071972489eb7468a202174ce915f1aa3.scn"]
 
 [params]
 

@@ -3,16 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cygor0gt7xhxw"
-path.s3tc="res://.godot/imported/decal_footprint_1.png-ae8bfe056386997f3b3d978a61d3052a.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/decals/decal_footprint_1.png"
-dest_files=["res://.godot/imported/decal_footprint_1.png-ae8bfe056386997f3b3d978a61d3052a.s3tc.ctex"]
 
 [params]
 

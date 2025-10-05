@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://eqwhlmvncfqw"
-path="res://.godot/imported/hand.png-1565bc300bd200b47ac5084887e98c5c.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/hand.png"
-dest_files=["res://.godot/imported/hand.png-1565bc300bd200b47ac5084887e98c5c.ctex"]
 
 [params]
 

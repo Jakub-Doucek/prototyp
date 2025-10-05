@@ -3,16 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3ffho2k8jbls"
-path.s3tc="res://.godot/imported/decal_bullethole_1.png-3664cadc031d6671ccaa9c8136d27422.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/decals/decal_bullethole_1.png"
-dest_files=["res://.godot/imported/decal_bullethole_1.png-3664cadc031d6671ccaa9c8136d27422.s3tc.ctex"]
 
 [params]
 

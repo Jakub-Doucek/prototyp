@@ -3,11 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blhdcvch4b2x4"
-path.s3tc="res://.godot/imported/EffectBlocks_flag.png-a8b60d3d9976ac3e05d1891d09c08dfd.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 generator_parameters={
 "md5": "2aba2c5c8b6c56868afe96c47614714f"
 }
@@ -15,7 +11,6 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/EffectBlocks_flag.png"
-dest_files=["res://.godot/imported/EffectBlocks_flag.png-a8b60d3d9976ac3e05d1891d09c08dfd.s3tc.ctex"]
 
 [params]
 

@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qspf360giv33"
-path="res://.godot/imported/anchor.png-8d80a84ffab1b0a16212de96412dcbc8.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/anchor.png"
-dest_files=["res://.godot/imported/anchor.png-8d80a84ffab1b0a16212de96412dcbc8.ctex"]
 
 [params]
 

@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://21wvtrul31k0"
-path="res://.godot/imported/club.png-68f3d7f917a8e584b45af6cdb5c696a5.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/club.png"
-dest_files=["res://.godot/imported/club.png-68f3d7f917a8e584b45af6cdb5c696a5.ctex"]
 
 [params]
 

@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://nnn4j5teqpdd"
-path="res://.godot/imported/boat.glb-0155b0c825c87caf7f7cbb5984c40469.scn"
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/meshes/props/boat.glb"
-dest_files=["res://.godot/imported/boat.glb-0155b0c825c87caf7f7cbb5984c40469.scn"]
 
 [params]
 

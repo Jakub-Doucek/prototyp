@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cignq58wstlha"
-path="res://.godot/imported/wrench.png-13ee528eb589a5eb74d307e4a15dcc5c.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/wrench.png"
-dest_files=["res://.godot/imported/wrench.png-13ee528eb589a5eb74d307e4a15dcc5c.ctex"]
 
 [params]
 

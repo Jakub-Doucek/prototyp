@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddm27iuau1uq4"
-path="res://.godot/imported/sparkle.png-f79d6cb73158edb8aeb4176fe13a30e8.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/sparkle.png"
-dest_files=["res://.godot/imported/sparkle.png-f79d6cb73158edb8aeb4176fe13a30e8.ctex"]
 
 [params]
 

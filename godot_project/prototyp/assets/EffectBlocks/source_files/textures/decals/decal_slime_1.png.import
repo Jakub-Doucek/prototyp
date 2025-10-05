@@ -3,16 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dby12jf22x462"
-path.s3tc="res://.godot/imported/decal_slime_1.png-9b379a5344f8b42a06e2e4226b5605f8.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/decals/decal_slime_1.png"
-dest_files=["res://.godot/imported/decal_slime_1.png-9b379a5344f8b42a06e2e4226b5605f8.s3tc.ctex"]
 
 [params]
 

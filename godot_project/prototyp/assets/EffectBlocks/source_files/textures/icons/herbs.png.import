@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cufxijomylq5t"
-path="res://.godot/imported/herbs.png-1b1cd8bc88dae4e42e102186aacde9e8.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/herbs.png"
-dest_files=["res://.godot/imported/herbs.png-1b1cd8bc88dae4e42e102186aacde9e8.ctex"]
 
 [params]
 

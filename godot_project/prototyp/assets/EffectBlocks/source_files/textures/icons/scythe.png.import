@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgyj75ljo6vmo"
-path="res://.godot/imported/scythe.png-ae574a433d4330851650642fbac1d25a.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/scythe.png"
-dest_files=["res://.godot/imported/scythe.png-ae574a433d4330851650642fbac1d25a.ctex"]
 
 [params]
 

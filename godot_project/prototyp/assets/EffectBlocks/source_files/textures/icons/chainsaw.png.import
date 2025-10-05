@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxkm664ybtj5l"
-path="res://.godot/imported/chainsaw.png-1d1846cde1bc1d9d42f9ed5f307395a6.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/chainsaw.png"
-dest_files=["res://.godot/imported/chainsaw.png-1d1846cde1bc1d9d42f9ed5f307395a6.ctex"]
 
 [params]
 
