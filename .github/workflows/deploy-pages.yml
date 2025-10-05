@@ -1,0 +1,112 @@
+name: CI Web Build
+
+on:
+  workflow_dispatch:
+
+# Required for Pages deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  export_game:
+    runs-on: ubuntu-latest
+    name: Export Game
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          lfs: true
+
+      - name: Godot Export (HTML5)
+        id: export
+        uses: firebelley/godot-export@v7.0.0
+        with:
+          # Godot 4.5 (matches your example)
+          godot_executable_download_url: https://github.com/godotengine/godot/releases/download/4.5-stable/Godot_v4.5-stable_linux.x86_64.zip
+          godot_export_templates_download_url: https://github.com/godotengine/godot/releases/download/4.5-stable/Godot_v4.5-stable_export_templates.tpz
+
+          cache: true
+
+          # Your project root:
+          relative_project_path: ./godot_project/prototyp
+
+          # Export preset name from Project → Export (HTML5)
+          presets_to_export: "Web"
+
+          # We'll keep your desired output folder
+          # (Your preset's export path can still be 'web_export/prototyp.html')
+          relative_export_path: ./web_export
+
+          # (Optional) creates zip archives; not needed for Pages
+          archive_output: yes
+
+      - name: Show export outputs (debug)
+        run: |
+          echo "Archive directory: ${{ steps.export.outputs.archive_directory }}"
+          ls -la "${{ steps.export.outputs.archive_directory }}" || true
+          echo "Build directory: ${{ steps.export.outputs.build_directory }}"
+          ls -la "${{ steps.export.outputs.build_directory }}" || true
+          echo "Working directory listing:"
+          ls -la
+
+      - name: Prepare Pages artifact
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          mkdir -p web_export_unzipped
+
+          # Find the .zip archive produced by firebelley/godot-export
+          ZIP_FILE=$(find "${{ steps.export.outputs.archive_directory }}" -type f -name "*.zip" | head -n1 || true)
+          if [ -n "$ZIP_FILE" ]; then
+            echo "Unzipping $ZIP_FILE..."
+            unzip -o "$ZIP_FILE" -d web_export_unzipped
+          else
+            echo "No .zip found, copying raw export directory..."
+            cp -r web_export/* web_export_unzipped/ || true
+          fi
+
+          # Flatten structure if necessary (sometimes it exports into a subfolder)
+          cd web_export_unzipped
+          if [ -d "web_export" ]; then
+            mv web_export/* . && rmdir web_export
+          fi
+          cd ..
+
+          # Add .nojekyll so Pages serves all files
+          touch web_export_unzipped/.nojekyll
+
+          # Rename prototyp.html -> index.html if needed
+          if [ -f "web_export_unzipped/prototyp.html" ]; then
+            mv web_export_unzipped/prototyp.html web_export_unzipped/index.html
+          fi
+
+          echo "Prepared files for Pages deployment:"
+          ls -la web_export_unzipped
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: web_export_unzipped
+
+  deploy:
+    needs: export_game
+    runs-on: ubuntu-latest
+    name: Deploy to GitHub Pages
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          # default artifact name is 'github-pages'
+          # only override if you renamed it in previous job
+          artifact_name: github-pages
