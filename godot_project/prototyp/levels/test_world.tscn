@@ -1,0 +1,174 @@
+[gd_scene load_steps=18 format=3 uid="uid://n6lj01e7q6hx"]
+
+[ext_resource type="PackedScene" uid="uid://cc1m2a1obsyn4" path="res://addons/fpc/character.tscn" id="1_37vfl"]
+[ext_resource type="Script" uid="uid://bs488lmrq4l78" path="res://levels/level.gd" id="1_lbfdw"]
+[ext_resource type="AudioStream" uid="uid://7liy58xp4ajc" path="res://assets/music/medieval-ambient-236809.mp3" id="2_5odyp"]
+[ext_resource type="PackedScene" uid="uid://q16aggykdbpd" path="res://assets/components/gothic/statue_2_16.tscn" id="2_edsus"]
+[ext_resource type="PackedScene" uid="uid://1ld63fyau6gx" path="res://assets/frames/frame01/frame01.tscn" id="3_iophl"]
+[ext_resource type="PackedScene" uid="uid://b7sftj6qofp8r" path="res://assets/components/gothic/frank.tscn" id="3_lbfdw"]
+[ext_resource type="PackedScene" uid="uid://drmn88jfvpm2v" path="res://assets/components/gothic/emperor.tscn" id="4_5odyp"]
+[ext_resource type="PackedScene" uid="uid://dj3aeqdj51jmj" path="res://assets/components/gothic/slope_007_1.tscn" id="4_bi2y1"]
+[ext_resource type="PackedScene" uid="uid://bsfpde74v4ouv" path="res://assets/components/gothic/cube_006_20.tscn" id="5_6q451"]
+[ext_resource type="PackedScene" uid="uid://dxi5wo3hah8ad" path="res://assets/components/gothic/gik_arch_1_0.tscn" id="6_lbfdw"]
+[ext_resource type="PackedScene" uid="uid://bh4em1fbetqpx" path="res://assets/final_area/final_area.tscn" id="7_edsus"]
+[ext_resource type="PackedScene" uid="uid://cbdwdib2q1mqg" path="res://assets/next_level_portal/next_level_portal.tscn" id="8_iophl"]
+[ext_resource type="PackedScene" uid="uid://b06tjn21eq3uq" path="res://levels/level_empty.tscn" id="13_1vc8c"]
+
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_edcox"]
+ground_color = Color(0.160784, 0.815686, 0.905882, 1)
+
+[sub_resource type="Sky" id="Sky_2iust"]
+sky_material = SubResource("PhysicalSkyMaterial_edcox")
+
+[sub_resource type="Environment" id="Environment_20rw3"]
+background_mode = 2
+sky = SubResource("Sky_2iust")
+tonemap_mode = 1
+ssao_enabled = true
+fog_enabled = true
+fog_light_color = Color(0.6488673, 0.5219739, 0.41847304, 1)
+fog_light_energy = 1.48
+fog_sun_scatter = 0.44
+fog_density = 0.053
+
+[sub_resource type="SphereMesh" id="SphereMesh_ud3vi"]
+radius = 4.0
+height = 8.0
+
+[node name="main_world" type="Node3D"]
+script = ExtResource("1_lbfdw")
+puzzle_text = "Požehnáno buď [světlo], i první den, kdy světlo bylo, požehnáno buď jméno slunce, a voda, která v noci pije z [hvězd]. Požehnáno buď [dítě], které spí a v dechu má moře, a [strom], jenž zpívá, když ho hladí vítr. Požehnán budiž [člověk], jenž se narodí z bolesti, a promění ji v [píseň]."
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("2_5odyp")
+
+[node name="Character" parent="." instance=ExtResource("1_37vfl")]
+unique_name_in_owner = true
+transform = Transform3D(-1.0000001, 0, -2.9802322e-08, 0, 1, 0, 2.9802322e-08, 0, -1.0000001, 11.421736, 1.0000019, -13.276314)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_20rw3")
+
+[node name="sun" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.8795902, -0.43660536, 0.18893608, 0, 0.39714807, 0.91775453, -0.47573215, -0.80724794, 0.34932756, 7.303009, 8.67791, 0)
+light_color = Color(0.9773162, 0.86035925, 0.81241244, 1)
+light_energy = 2.742
+shadow_enabled = true
+
+[node name="terrain" type="Node3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="terrain"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.732544, -0.5, 4)
+use_collision = true
+size = Vector3(21, 1, 40)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="terrain"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.805664, 1.1942749, 19.000294)
+use_collision = true
+size = Vector3(9, 3, 7)
+
+[node name="statue_2_16" parent="terrain/CSGBox3D5" instance=ExtResource("2_edsus")]
+transform = Transform3D(-2.588191, 0, 9.659258, 0, 10, 0, -9.659258, 0, -2.588191, 0, 1.3000002, 0)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="terrain"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.357513, -8.262541, 23.431297)
+use_collision = true
+size = Vector3(18, 7, 20)
+
+[node name="frank" parent="terrain/CSGBox3D2" instance=ExtResource("3_lbfdw")]
+transform = Transform3D(-3.496911e-07, 0, -8, 0, 8, 0, 8, 0, -3.496911e-07, 0, 7, 0)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="terrain"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.357513, -9.503635, -35.43685)
+use_collision = true
+size = Vector3(30, 1, 30)
+
+[node name="emperor" parent="terrain/CSGBox3D3" instance=ExtResource("4_5odyp")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -13, 18, -14)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="terrain"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.665947, -13.21319, -27.461746)
+use_collision = true
+size = Vector3(12, 4, 19)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="terrain/CSGBox3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.313418, 0)
+mesh = SubResource("SphereMesh_ud3vi")
+
+[node name="Frame1" parent="." instance=ExtResource("3_iophl")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 14.93798, 1.508955, 0.27978706)
+original_text = "[wave amp=40.0 freq=1.0 connected=1]
+[color=red]Světlo[/color] si pamatuje i ty stíny, které proměnilo v cestu.[/wave]"
+
+[node name="Frame2" parent="." instance=ExtResource("3_iophl")]
+transform = Transform3D(0.004817066, 0, -0.9999884, 0, 1, 0, 0.9999884, 0, 0.004817066, 15.005, 1.5, 4.984)
+original_text = "[wave amp=40.0 freq=1.0 connected=1]
+[color=red]Strom[/color] nekráčí, a přesto dorazí dál než poutník.[/wave]"
+
+[node name="Frame3" parent="." instance=ExtResource("3_iophl")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 15.009, 1.5, 8.86)
+original_text = "[wave amp=40.0 freq=1.0 connected=1]
+Z prachu [color=red]hvězd[/color] jsme povstali, abychom znovu zazářili v očích druhých.[/wave]"
+
+[node name="Frame4" parent="." instance=ExtResource("3_iophl")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.102, 1.5, 0.99400043)
+original_text = "[wave amp=40.0 freq=1.0 connected=1]
+[color=red]Člověk[/color] je most mezi tichem hlíny a zpěvem věčnosti.[/wave]"
+
+[node name="Frame5" parent="." instance=ExtResource("3_iophl")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.102, 1.5, 8.994)
+original_text = "[wave amp=40.0 freq=1.0 connected=1]
+Když se narodí [color=red]dítě[/color], bohové na chvíli ztiší bouře, aby slyšeli jeho dech.[/wave]"
+
+[node name="Frame6" parent="." instance=ExtResource("3_iophl")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.102, 1.5, 4.9940004)
+original_text = "[wave amp=40.0 freq=1.0 connected=1]
+[color=red]Píseň[/color] je dech, který si svět bere, když chce zůstat živý.[/wave]"
+
+[node name="slope_007_1" parent="." instance=ExtResource("4_bi2y1")]
+transform = Transform3D(0.5602766, 0, -0.23692366, 0, 0.60831136, 0, 0.23692366, 0, 0.5602766, 14.799057, 4.7683716e-07, -2.0446563)
+
+[node name="slope_007_2" parent="." instance=ExtResource("4_bi2y1")]
+transform = Transform3D(0.5602766, 0, -0.23692366, 0, 0.60831136, 0, 0.23692366, 0, 0.5602766, 14.799057, 4.7683716e-07, 2.9553437)
+
+[node name="slope_007_3" parent="." instance=ExtResource("4_bi2y1")]
+transform = Transform3D(0.5602766, 0, -0.23692366, 0, 0.60831136, 0, 0.23692366, 0, 0.5602766, 14.799057, 4.7683716e-07, 14.955343)
+
+[node name="slope_007_4" parent="." instance=ExtResource("4_bi2y1")]
+transform = Transform3D(0.5602766, 0, -0.23692366, 0, 0.60831136, 0, 0.23692366, 0, 0.5602766, 14.799057, 4.7683716e-07, 6.9553437)
+
+[node name="slope_007_5" parent="." instance=ExtResource("4_bi2y1")]
+transform = Transform3D(0.5602766, 0, -0.23692366, 0, 0.60831136, 0, 0.23692366, 0, 0.5602766, 14.799057, 4.7683716e-07, 10.955343)
+
+[node name="slope_007_6" parent="." instance=ExtResource("4_bi2y1")]
+transform = Transform3D(0.5602766, 0, -0.23692366, 0, 0.60831136, 0, 0.23692366, 0, 0.5602766, 8.799057, 4.7683716e-07, 14.955343)
+
+[node name="slope_007_7" parent="." instance=ExtResource("4_bi2y1")]
+transform = Transform3D(0.5602766, 0, -0.23692366, 0, 0.60831136, 0, 0.23692366, 0, 0.5602766, 8.799057, 4.7683716e-07, 10.955343)
+
+[node name="slope_007_8" parent="." instance=ExtResource("4_bi2y1")]
+transform = Transform3D(0.5602766, 0, -0.23692366, 0, 0.60831136, 0, 0.23692366, 0, 0.5602766, 8.799057, 4.7683716e-07, 6.9553432)
+
+[node name="slope_007_9" parent="." instance=ExtResource("4_bi2y1")]
+transform = Transform3D(0.5602766, 0, -0.23692366, 0, 0.60831136, 0, 0.23692366, 0, 0.5602766, 8.799057, 4.7683716e-07, 2.9553432)
+
+[node name="slope_007_10" parent="." instance=ExtResource("4_bi2y1")]
+transform = Transform3D(0.5602766, 0, -0.23692366, 0, 0.60831136, 0, 0.23692366, 0, 0.5602766, 8.799057, 4.7683716e-07, -2.0446568)
+
+[node name="cube_006_20" parent="." instance=ExtResource("5_6q451")]
+transform = Transform3D(0.60831136, 0, 0, 0, 0.60831136, 0, 0, 0, 0.60831136, 12, 0, 20)
+
+[node name="gik_arch_1_0" parent="." instance=ExtResource("6_lbfdw")]
+transform = Transform3D(0.029771905, 0, -0.36877516, 0, 0.36997494, 0, 0.36877516, 0, 0.029771905, 12, 0, -4)
+
+[node name="statue_2_16" parent="." instance=ExtResource("2_edsus")]
+transform = Transform3D(2.128711, 0, 0, 0, 2.128711, 0, 0, 0, 2.128711, 11.8, 0, 18.5)
+
+[node name="FinalArea" parent="." instance=ExtResource("7_edsus")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.6, 0.4, 16.9)
+
+[node name="NextLevelPortal" parent="." instance=ExtResource("8_iophl")]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.000001, 0, -4)
+next_level = ExtResource("13_1vc8c")

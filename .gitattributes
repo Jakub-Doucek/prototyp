@@ -1,0 +1,9 @@
+models/hygieia.zip filter=lfs diff=lfs merge=lfs -text
+models/hygieia/textures/Hygieia_O.001_baseColor.png filter=lfs diff=lfs merge=lfs -text
+models/ilioneus.zip filter=lfs diff=lfs merge=lfs -text
+models/free_angels_statues_-_retopoed_kinda.zip filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.glb filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://drmn88jfvpm2v"]
+
+[ext_resource type="PackedScene" uid="uid://b10b8nfd7khkf" path="res://assets/statue/statue_of_emperor_trajan_tower_hill_london.glb" id="1_oxnqk"]
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_oxnqk")]
