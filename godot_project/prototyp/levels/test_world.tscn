@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://n6lj01e7q6hx"]
+[gd_scene load_steps=19 format=3 uid="uid://n6lj01e7q6hx"]
 
 [ext_resource type="PackedScene" uid="uid://cc1m2a1obsyn4" path="res://addons/fpc/character.tscn" id="1_37vfl"]
 [ext_resource type="Script" uid="uid://bs488lmrq4l78" path="res://levels/level.gd" id="1_lbfdw"]
@@ -8,17 +8,18 @@
 [ext_resource type="PackedScene" uid="uid://b7sftj6qofp8r" path="res://assets/components/gothic/frank.tscn" id="3_lbfdw"]
 [ext_resource type="PackedScene" uid="uid://drmn88jfvpm2v" path="res://assets/components/gothic/emperor.tscn" id="4_5odyp"]
 [ext_resource type="PackedScene" uid="uid://dj3aeqdj51jmj" path="res://assets/components/gothic/slope_007_1.tscn" id="4_bi2y1"]
+[ext_resource type="Texture2D" uid="uid://cpd7gj1k4dbvk" path="res://assets/skyboxes/Skyboxes/AllSkyFree_Sky_OvercastLow_Equirect.png" id="4_tjunk"]
 [ext_resource type="PackedScene" uid="uid://bsfpde74v4ouv" path="res://assets/components/gothic/cube_006_20.tscn" id="5_6q451"]
 [ext_resource type="PackedScene" uid="uid://dxi5wo3hah8ad" path="res://assets/components/gothic/gik_arch_1_0.tscn" id="6_lbfdw"]
 [ext_resource type="PackedScene" uid="uid://bh4em1fbetqpx" path="res://assets/final_area/final_area.tscn" id="7_edsus"]
 [ext_resource type="PackedScene" uid="uid://cbdwdib2q1mqg" path="res://assets/next_level_portal/next_level_portal.tscn" id="8_iophl"]
 [ext_resource type="PackedScene" uid="uid://b06tjn21eq3uq" path="res://levels/level_empty.tscn" id="13_1vc8c"]
 
-[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_edcox"]
-ground_color = Color(0.160784, 0.815686, 0.905882, 1)
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_pas6s"]
+panorama = ExtResource("4_tjunk")
 
 [sub_resource type="Sky" id="Sky_2iust"]
-sky_material = SubResource("PhysicalSkyMaterial_edcox")
+sky_material = SubResource("PanoramaSkyMaterial_pas6s")
 
 [sub_resource type="Environment" id="Environment_20rw3"]
 background_mode = 2
@@ -26,10 +27,11 @@ sky = SubResource("Sky_2iust")
 tonemap_mode = 1
 ssao_enabled = true
 fog_enabled = true
-fog_light_color = Color(0.6488673, 0.5219739, 0.41847304, 1)
+fog_light_color = Color(0.58590513, 0.5431338, 0.47976494, 1)
 fog_light_energy = 1.48
-fog_sun_scatter = 0.44
-fog_density = 0.053
+fog_sun_scatter = 0.41
+fog_density = 0.0788
+fog_sky_affect = 0.522
 
 [sub_resource type="SphereMesh" id="SphereMesh_ud3vi"]
 radius = 4.0
@@ -51,9 +53,10 @@ transform = Transform3D(-1.0000001, 0, -2.9802322e-08, 0, 1, 0, 2.9802322e-08, 0
 environment = SubResource("Environment_20rw3")
 
 [node name="sun" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.8795902, -0.43660536, 0.18893608, 0, 0.39714807, 0.91775453, -0.47573215, -0.80724794, 0.34932756, 7.303009, 8.67791, 0)
-light_color = Color(0.9773162, 0.86035925, 0.81241244, 1)
-light_energy = 2.742
+transform = Transform3D(0.9890159, -0.04222743, 0.14164907, 0, 0.9583226, 0.28568834, -0.1478094, -0.28255033, 0.94779617, 7.303009, 8.67791, 0)
+light_color = Color(0.9209856, 0.77679473, 0.6775267, 1)
+light_energy = 1.48
+light_specular = 1.9
 shadow_enabled = true
 
 [node name="terrain" type="Node3D" parent="."]
