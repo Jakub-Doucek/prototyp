@@ -1,19 +1,20 @@
-[gd_scene load_steps=12 format=3 uid="uid://b06tjn21eq3uq"]
+[gd_scene load_steps=13 format=3 uid="uid://b06tjn21eq3uq"]
 
 [ext_resource type="Script" uid="uid://bs488lmrq4l78" path="res://levels/level.gd" id="1_lmjfc"]
 [ext_resource type="AudioStream" uid="uid://cn7ryin2wpj4i" path="res://assets/music/aggressive-techno-409194.mp3" id="2_5rvx2"]
 [ext_resource type="PackedScene" uid="uid://cc1m2a1obsyn4" path="res://addons/fpc/character.tscn" id="3_6r62q"]
 [ext_resource type="AudioStream" uid="uid://du5yc7rb3xamv" path="res://assets/sounds/footsteps/heavy-walking-footsteps-352771.mp3" id="4_5rvx2"]
+[ext_resource type="Texture2D" uid="uid://cjjqtc43kqqwd" path="res://assets/skyboxes/Skyboxes/AllSkyFree_Sky_AnotherPlanet_Equirect.png" id="5_fd4fe"]
 [ext_resource type="PackedScene" uid="uid://1ld63fyau6gx" path="res://assets/frames/frame01/frame01.tscn" id="7_o1282"]
 [ext_resource type="PackedScene" uid="uid://dj3aeqdj51jmj" path="res://assets/components/gothic/slope_007_1.tscn" id="8_g7eju"]
 [ext_resource type="PackedScene" uid="uid://bh4em1fbetqpx" path="res://assets/final_area/final_area.tscn" id="11_r4f7a"]
 [ext_resource type="PackedScene" uid="uid://cbdwdib2q1mqg" path="res://assets/next_level_portal/next_level_portal.tscn" id="12_5bk8h"]
 
-[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_edcox"]
-ground_color = Color(0.160784, 0.815686, 0.905882, 1)
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_t7c8s"]
+panorama = ExtResource("5_fd4fe")
 
 [sub_resource type="Sky" id="Sky_2iust"]
-sky_material = SubResource("PhysicalSkyMaterial_edcox")
+sky_material = SubResource("PanoramaSkyMaterial_t7c8s")
 
 [sub_resource type="Environment" id="Environment_20rw3"]
 background_mode = 2
@@ -21,10 +22,11 @@ sky = SubResource("Sky_2iust")
 tonemap_mode = 1
 ssao_enabled = true
 fog_enabled = true
-fog_light_color = Color(0.4582559, 0.48107153, 0.97702926, 1)
+fog_light_color = Color(0.10583011, 0.2281501, 0.5782634, 1)
 fog_light_energy = 1.48
 fog_sun_scatter = 0.44
 fog_density = 0.053
+fog_sky_affect = 0.249
 
 [node name="main_world" type="Node3D"]
 script = ExtResource("1_lmjfc")
@@ -43,9 +45,9 @@ walking_sound = ExtResource("4_5rvx2")
 environment = SubResource("Environment_20rw3")
 
 [node name="sun" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.8795902, -0.43660536, 0.18893608, 0, 0.39714807, 0.91775453, -0.47573215, -0.80724794, 0.34932756, 7.303009, 8.67791, 0)
-light_color = Color(0.9773162, 0.86035925, 0.81241244, 1)
-light_energy = 2.742
+transform = Transform3D(0.9997015, -0.0035691266, -0.024170076, 0, 0.98927236, -0.14608301, 0.024432179, 0.14603943, 0.988977, 7.303009, 8.67791, 0)
+light_color = Color(0.51115954, 0.55708605, 0.96564955, 1)
+light_energy = 3.14
 shadow_enabled = true
 
 [node name="terrain" type="Node3D" parent="."]

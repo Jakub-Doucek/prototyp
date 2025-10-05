@@ -190,7 +190,7 @@ draw_pass_1 = SubResource("ArrayMesh_0hkbl")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.150917, 0.5)
-light_color = Color(0, 0.690196, 1, 1)
+light_color = Color(0.668755, 0.31926832, 0.7167731, 1)
 light_energy = 3.089
 omni_range = 1.3
 
