@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d383fm5ymh4p3"
-valid=false
+path="res://.godot/imported/fishingnet.png-c4a8da720650587c56eb206bbfaa84be.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/fishingnet.png"
+dest_files=["res://.godot/imported/fishingnet.png-c4a8da720650587c56eb206bbfaa84be.ctex"]
 
 [params]
 

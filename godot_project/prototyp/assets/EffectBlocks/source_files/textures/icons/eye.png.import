@@ -3,11 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b23i7qg4c0qxm"
-valid=false
+path.s3tc="res://.godot/imported/eye.png-315fc78c40c199569178930f6618f08a.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/eye.png"
+dest_files=["res://.godot/imported/eye.png-315fc78c40c199569178930f6618f08a.s3tc.ctex"]
 
 [params]
 

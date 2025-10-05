@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpintu5axcv88"
-valid=false
+uid="uid://dqtdy68cod28h"
+path="res://.godot/imported/barrel.png-081e0308d8593fcd7d0c8d11ce5ac8aa.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/barrel.png"
+dest_files=["res://.godot/imported/barrel.png-081e0308d8593fcd7d0c8d11ce5ac8aa.ctex"]
 
 [params]
 

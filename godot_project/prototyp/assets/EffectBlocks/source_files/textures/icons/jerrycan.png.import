@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8j1yobakvccx"
-valid=false
+uid="uid://6pby2nasnylv"
+path="res://.godot/imported/jerrycan.png-dd9e30b84da2ca5a55a411932a5963d1.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/jerrycan.png"
+dest_files=["res://.godot/imported/jerrycan.png-dd9e30b84da2ca5a55a411932a5963d1.ctex"]
 
 [params]
 

@@ -3,12 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bbihvvad82rd5"
-valid=false
+uid="uid://cv8ra0em1nyv1"
+path="res://.godot/imported/Undead.glb-663950397e09661bb5e69ce8e95955d7.scn"
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/meshes/props/Undead.glb"
+dest_files=["res://.godot/imported/Undead.glb-663950397e09661bb5e69ce8e95955d7.scn"]
 
 [params]
 
@@ -37,5 +38,5 @@ materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
 _subresources={}
-gltf/naming_version=1
+gltf/naming_version=2
 gltf/embedded_image_handling=1

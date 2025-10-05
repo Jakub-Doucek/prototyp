@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brryq1ccmqy8x"
-valid=false
+path="res://.godot/imported/cowbar.png-52ae02fc0002a146b7c1d7f2131f840f.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/cowbar.png"
+dest_files=["res://.godot/imported/cowbar.png-52ae02fc0002a146b7c1d7f2131f840f.ctex"]
 
 [params]
 

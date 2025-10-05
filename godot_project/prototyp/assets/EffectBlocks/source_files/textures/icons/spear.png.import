@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://p8yrtj5vtiof"
-valid=false
+uid="uid://crsjriu4t0xni"
+path="res://.godot/imported/spear.png-ed2e0488add89c6877055c645f7c5d43.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/spear.png"
+dest_files=["res://.godot/imported/spear.png-ed2e0488add89c6877055c645f7c5d43.ctex"]
 
 [params]
 

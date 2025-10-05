@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hl4jskin4r0i"
-valid=false
+uid="uid://catturrjkqvcs"
+path="res://.godot/imported/crowmask.png-1a9313c0fbc42942515146577474c880.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/crowmask.png"
+dest_files=["res://.godot/imported/crowmask.png-1a9313c0fbc42942515146577474c880.ctex"]
 
 [params]
 

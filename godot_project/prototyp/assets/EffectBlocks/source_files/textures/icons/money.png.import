@@ -3,11 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vykn2ffymw4o"
-valid=false
+path.s3tc="res://.godot/imported/money.png-775b293850b9a085ba0a161dcdf527eb.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/money.png"
+dest_files=["res://.godot/imported/money.png-775b293850b9a085ba0a161dcdf527eb.s3tc.ctex"]
 
 [params]
 

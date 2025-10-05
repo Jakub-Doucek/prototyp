@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7bjdl48xd8sb"
-valid=false
+uid="uid://bhexf1yweau41"
+path="res://.godot/imported/bucket.png-179c5d75e8515536a62cf953fe67edca.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/bucket.png"
+dest_files=["res://.godot/imported/bucket.png-179c5d75e8515536a62cf953fe67edca.ctex"]
 
 [params]
 

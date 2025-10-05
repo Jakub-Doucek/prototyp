@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfyeqtxi7yjj0"
-valid=false
+path="res://.godot/imported/pistol.png-fed485af60e350eeb3989c76b33c9024.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/pistol.png"
+dest_files=["res://.godot/imported/pistol.png-fed485af60e350eeb3989c76b33c9024.ctex"]
 
 [params]
 

@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dywuqets20m1d"
-valid=false
+path="res://.godot/imported/ak47.png-ab49bdf5bd02e5319e3a7074c9d465a6.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/ak47.png"
+dest_files=["res://.godot/imported/ak47.png-ab49bdf5bd02e5319e3a7074c9d465a6.ctex"]
 
 [params]
 

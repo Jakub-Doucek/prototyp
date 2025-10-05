@@ -1,17 +1,3 @@
-[gd_resource type="Environment" load_steps=3 format=3 uid="uid://dpe67oxufw0sn"]
-
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_l1btb"]
-
-[sub_resource type="Sky" id="Sky_b1a3c"]
-sky_material = SubResource("ProceduralSkyMaterial_l1btb")
-
-[resource]
-background_mode = 2
-sky = SubResource("Sky_b1a3c")
-tonemap_mode = 2
-glow_enabled = true
-fog_light_color = Color(0.0860433, 0.265962, 0.285408, 1)
-fog_light_energy = 0.52
-volumetric_fog_enabled = true
-volumetric_fog_albedo = Color(0.343116, 0.421279, 0.435641, 1)
-volumetric_fog_emission_energy = 0.0
+version https://git-lfs.github.com/spec/v1
+oid sha256:7d8d21d403871844b9503fd709d7f141875e408c736f47cd127a0a636f5eb0d2
+size 571

@@ -1,7 +1,7 @@
 //portal.gdshader
 shader_type spatial;
 
-render_mode blend_add, cull_disabled, unshaded;
+render_mode blend_add, cull_disabled;
 
 uniform sampler2D portal_texture;
 uniform vec4 outer_color : source_color = vec4(0.0, 0.0, 0.0, 0.0);

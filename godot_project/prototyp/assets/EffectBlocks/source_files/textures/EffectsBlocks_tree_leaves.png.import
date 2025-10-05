@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cue203ti8uyi2"
-valid=false
+path.s3tc="res://.godot/imported/EffectsBlocks_tree_leaves.png-791540d6d1296a57a6d5765f302bc5d7.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
 generator_parameters={
 "md5": "a9f7892293ddc2908ae884ede02ee22e"
 }
@@ -11,6 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/EffectsBlocks_tree_leaves.png"
+dest_files=["res://.godot/imported/EffectsBlocks_tree_leaves.png-791540d6d1296a57a6d5765f302bc5d7.s3tc.ctex"]
 
 [params]
 

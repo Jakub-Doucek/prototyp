@@ -3,11 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5cmwnpwvshvd"
-valid=false
+path.s3tc="res://.godot/imported/cross.png-dfaee25da6807c28c65d29e34f772bb0.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/cross.png"
+dest_files=["res://.godot/imported/cross.png-dfaee25da6807c28c65d29e34f772bb0.s3tc.ctex"]
 
 [params]
 

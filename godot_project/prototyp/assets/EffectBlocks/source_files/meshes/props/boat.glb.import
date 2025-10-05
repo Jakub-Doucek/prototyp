@@ -3,12 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://nnn4j5teqpdd"
-valid=false
+uid="uid://dumgakb3e3wfh"
+path="res://.godot/imported/boat.glb-0155b0c825c87caf7f7cbb5984c40469.scn"
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/meshes/props/boat.glb"
+dest_files=["res://.godot/imported/boat.glb-0155b0c825c87caf7f7cbb5984c40469.scn"]
 
 [params]
 
@@ -37,5 +38,5 @@ materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
 _subresources={}
-gltf/naming_version=1
+gltf/naming_version=2
 gltf/embedded_image_handling=1

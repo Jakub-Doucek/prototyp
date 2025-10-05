@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://gfud0svns45k"
-valid=false
+path="res://.godot/imported/bow.png-55559635ae8cb24cf17d25e3e74b5caa.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/bow.png"
+dest_files=["res://.godot/imported/bow.png-55559635ae8cb24cf17d25e3e74b5caa.ctex"]
 
 [params]
 

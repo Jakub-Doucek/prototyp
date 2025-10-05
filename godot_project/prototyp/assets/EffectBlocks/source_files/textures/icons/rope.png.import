@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhhim8eyiccam"
-valid=false
+uid="uid://crd6js6us2mi0"
+path="res://.godot/imported/rope.png-ff072402b908332825f6f8303baee6af.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/icons/rope.png"
+dest_files=["res://.godot/imported/rope.png-ff072402b908332825f6f8303baee6af.ctex"]
 
 [params]
 

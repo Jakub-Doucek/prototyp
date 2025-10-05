@@ -3,12 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://rdfykdt5hnvu"
-valid=false
+uid="uid://dhntatoqjj6pr"
+path="res://.godot/imported/Tonardo.glb-f3784f7f5f59c7349cdbe09e1d38ac35.scn"
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/meshes/Tonardo.glb"
+dest_files=["res://.godot/imported/Tonardo.glb-f3784f7f5f59c7349cdbe09e1d38ac35.scn"]
 
 [params]
 
@@ -37,5 +38,5 @@ materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
 _subresources={}
-gltf/naming_version=1
+gltf/naming_version=2
 gltf/embedded_image_handling=1

@@ -3,11 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://1poghguxi8an"
-valid=false
+path.s3tc="res://.godot/imported/explosion_1.png-2a8890688ded181267837e7e1fbad7e3.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://assets/EffectBlocks/source_files/textures/explosion_1.png"
+dest_files=["res://.godot/imported/explosion_1.png-2a8890688ded181267837e7e1fbad7e3.s3tc.ctex"]
 
 [params]
 
