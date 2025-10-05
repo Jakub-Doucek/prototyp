@@ -44,7 +44,7 @@ jobs:
           relative_export_path: ./web_export
 
           # (Optional) creates zip archives; not needed for Pages
-          archive_output: yes
+          archive_output: false
 
       - name: Show export outputs (debug)
         run: |
@@ -60,35 +60,19 @@ jobs:
         run: |
           set -euo pipefail
 
-          mkdir -p web_export_unzipped
-
-          # Find the .zip archive produced by firebelley/godot-export
-          ZIP_FILE=$(find "${{ steps.export.outputs.archive_directory }}" -type f -name "*.zip" | head -n1 || true)
-          if [ -n "$ZIP_FILE" ]; then
-            echo "Unzipping $ZIP_FILE..."
-            unzip -o "$ZIP_FILE" -d web_export_unzipped
-          else
-            echo "No .zip found, copying raw export directory..."
-            cp -r web_export/* web_export_unzipped/ || true
+          BUILD_DIR="${{ steps.export.outputs.build_directory }}"
+          # Fallback if the action didn’t set the output for some reason
+          if [ ! -d "$BUILD_DIR" ]; then
+            BUILD_DIR="web_export"
           fi
 
-          # Flatten structure if necessary (sometimes it exports into a subfolder)
-          cd web_export_unzipped
-          if [ -d "web_export" ]; then
-            mv web_export/* . && rmdir web_export
+          # Ensure Jekyll doesn't interfere with files like _* etc.
+          touch "$BUILD_DIR/.nojekyll"
+
+          # Option A: rename main HTML so Pages auto-loads it
+          if [ -f "$BUILD_DIR/prototyp.html" ]; then
+            mv "$BUILD_DIR/prototyp.html" "$BUILD_DIR/index.html"
           fi
-          cd ..
-
-          # Add .nojekyll so Pages serves all files
-          touch web_export_unzipped/.nojekyll
-
-          # Rename prototyp.html -> index.html if needed
-          if [ -f "web_export_unzipped/prototyp.html" ]; then
-            mv web_export_unzipped/prototyp.html web_export_unzipped/index.html
-          fi
-
-          echo "Prepared files for Pages deployment:"
-          ls -la web_export_unzipped
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
@@ -96,17 +80,4 @@ jobs:
       - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: web_export_unzipped
-
-  deploy:
-    needs: export_game
-    runs-on: ubuntu-latest
-    name: Deploy to GitHub Pages
-    steps:
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
-        with:
-          # default artifact name is 'github-pages'
-          # only override if you renamed it in previous job
-          artifact_name: github-pages
+          path: ${{ steps.export.outputs.build_directory }}
