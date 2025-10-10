@@ -68,6 +68,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.232544, -0.5, 14.80481)
 use_collision = true
 size = Vector3(4, 1, 5)
 
+[node name="CSGBox3D5" type="CSGBox3D" parent="terrain"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.232544, -0.5, 18.80481)
+use_collision = true
+size = Vector3(4, 1, 5)
+
 [node name="CSGBox3D4" type="CSGBox3D" parent="terrain"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.232544, -0.5, 24.80481)
 use_collision = true
@@ -103,7 +108,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 1
+mouse_filter = 2
 
 [node name="AuthorName" type="Label" parent="LevelUI"]
 unique_name_in_owner = true
