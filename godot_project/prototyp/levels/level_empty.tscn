@@ -103,6 +103,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 1
 
 [node name="AuthorName" type="Label" parent="LevelUI"]
 unique_name_in_owner = true
@@ -119,8 +120,3 @@ offset_bottom = -43.0
 grow_horizontal = 0
 grow_vertical = 0
 theme_override_font_sizes/font_size = 25
-
-[node name="Control" type="Control" parent="LevelUI"]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
