@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://d3yo104xfw1br"]
+
+[ext_resource type="Script" uid="uid://b8hmbgyjipt3b" path="res://scenes/levels_list.gd" id="1_icaua"]
+[ext_resource type="PackedScene" uid="uid://bqm1drs3i17qp" path="res://scenes/level_list_button.tscn" id="2_60doi"]
+[ext_resource type="PackedScene" uid="uid://n6lj01e7q6hx" path="res://levels/level1.tscn" id="2_jtpml"]
+[ext_resource type="PackedScene" uid="uid://b06tjn21eq3uq" path="res://levels/level_empty.tscn" id="3_ngnji"]
+
+[node name="LevelsList" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_icaua")
+levels = Array[PackedScene]([ExtResource("2_jtpml"), ExtResource("3_ngnji")])
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/MarginContainer/CenterContainer"]
+custom_minimum_size = Vector2(500, 800)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer/CenterContainer/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_constants/separation = 20
+
+[node name="LevelListButton" parent="Panel/MarginContainer/CenterContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_60doi")]
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="Panel/MarginContainer/CenterContainer/ScrollContainer/VBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 40
+text = "Pan Tau"
