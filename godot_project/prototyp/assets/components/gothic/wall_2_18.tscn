@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://g1mumo1lqgs8"]
+[gd_scene load_steps=11 format=4 uid="uid://g1mumo1lqgs8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ysip7"]
 resource_name = "material"
@@ -39,6 +39,9 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ldhdy")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4s0qc"]
+points = PackedVector3Array(1, 0.25557718, 0, -1, 0.25557718, 0, 1, -2.6643276e-05, 0, 1, 0.25586352, -3.8899765, -1, -2.6643276e-05, 0, -1, 0.25586352, -3.8899765, 0.45986688, -0.32922462, -0.9573219, 0.5072435, -0.3108404, -0.9573219, 1, -2.6643276e-05, -3.660141, 1, 0.25557718, -4, -1, -2.6643276e-05, -3.660141, -0.5074393, -0.3108404, -0.9573219, -0.46006262, -0.32922462, -0.9573219, -1, 0.25557718, -4, 0.45967114, -0.32922462, -2.50509, 0.5072435, -0.3108404, -2.50509, 0.39702427, -0.3108404, -3.0133123, 0.3490603, -0.32922462, -3.0133123, 0.08574784, -0.32922462, -3.3453407, 0.0990603, -0.3108404, -3.3899765, -0.09925604, -0.3108404, -3.3899765, -0.08594364, -0.32922462, -3.3453407, -0.34925604, -0.32922462, -3.0133123, -0.39722008, -0.3108404, -3.0133123, -0.5074393, -0.3108404, -2.50509, -0.45986688, -0.32922462, -2.50509)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_trn0n"]
 resource_name = "material_12"
@@ -124,6 +127,11 @@ transform = Transform3D(1, 0, 0, 0, 8.4293696e-08, -1, 0, 1, 8.4293696e-08, 0, 0
 [node name="Object_45" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_ix8qp")
 skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Object_45"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Object_45/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_4s0qc")
 
 [node name="Object_46" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_tpml6")
