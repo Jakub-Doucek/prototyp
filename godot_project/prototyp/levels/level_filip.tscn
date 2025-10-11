@@ -90,11 +90,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.6, 0.4, 22.9)
 
 [node name="NextLevelPortal" parent="." instance=ExtResource("9_gbajc")]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.000001, 0, -4)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.000001, 0.7, -4)
 next_level = ExtResource("8_rg3qm")
 
+[node name="CollisionShape3D" parent="NextLevelPortal" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.59999996, 0.4000001)
+
 [node name="Portal" parent="NextLevelPortal" index="1"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 2, 1.3000001, 0)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 2, 0.50000006, 0)
 
 [node name="LevelUI" type="Control" parent="."]
 layout_mode = 3
