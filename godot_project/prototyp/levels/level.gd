@@ -24,7 +24,7 @@ func _ready() -> void:
 	author_name.text = author
 	
 func _physics_process(_delta: float) -> void:
-	if character.global_position.y < -5.0:
+	if character.global_position.y < -25.0:
 		character.global_position = player_original_position
 		
 func _input(event: InputEvent) -> void:
