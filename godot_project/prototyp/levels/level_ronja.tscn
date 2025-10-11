@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cvcxjlmjaptqb"]
+[gd_scene load_steps=20 format=3 uid="uid://cvcxjlmjaptqb"]
 
 [ext_resource type="Script" uid="uid://bs488lmrq4l78" path="res://levels/level.gd" id="1_2vjdm"]
 [ext_resource type="AudioStream" uid="uid://bprr5c6yxjboe" path="res://assets/music/emotional-ambient-piece-with-slow-cinematic-textures-370142.mp3" id="2_gji1p"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://d23s8ywe8qgpj" path="res://assets/components/gothic/fence_1_001_7.tscn" id="9_m8tp6"]
 [ext_resource type="PackedScene" uid="uid://dxi5wo3hah8ad" path="res://assets/components/gothic/gik_arch_1_0.tscn" id="9_pjrvi"]
 [ext_resource type="PackedScene" uid="uid://dhcrfhvue3lb" path="res://assets/components/gothic/min_window_12.tscn" id="13_1uw84"]
+[ext_resource type="PackedScene" uid="uid://w3ygllptgt6n" path="res://levels/level_stepan.tscn" id="16_wjy21"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_t7c8s"]
 panorama = ExtResource("5_wjy21")
@@ -139,6 +140,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.6, 0.4, 22.9)
 [node name="NextLevelPortal" parent="." instance=ExtResource("9_7wlau")]
 unique_name_in_owner = true
 transform = Transform3D(0.070835896, 0, -0.99748796, 0, 1, 0, 0.99748796, 0, 0.070835896, 19.909239, 0, 22.433949)
+next_level = ExtResource("16_wjy21")
 
 [node name="LevelUI" type="Control" parent="."]
 layout_mode = 3

@@ -13,7 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://dxi5wo3hah8ad" path="res://assets/components/gothic/gik_arch_1_0.tscn" id="6_lbfdw"]
 [ext_resource type="PackedScene" uid="uid://bh4em1fbetqpx" path="res://assets/final_area/final_area.tscn" id="7_edsus"]
 [ext_resource type="PackedScene" uid="uid://cbdwdib2q1mqg" path="res://assets/next_level_portal/next_level_portal.tscn" id="8_iophl"]
-[ext_resource type="PackedScene" uid="uid://b06tjn21eq3uq" path="res://levels/level_empty.tscn" id="13_1vc8c"]
+[ext_resource type="PackedScene" uid="uid://bcwpfd3hrlp4x" path="res://levels/level_adam.tscn" id="14_f7u7y"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_pas6s"]
 panorama = ExtResource("4_tjunk")
@@ -174,7 +174,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.6, 0.4, 16.9)
 [node name="NextLevelPortal" parent="." instance=ExtResource("8_iophl")]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.000001, 0, -4)
-next_level = ExtResource("13_1vc8c")
+next_level = ExtResource("14_f7u7y")
 
 [node name="LevelUI" type="Control" parent="."]
 layout_mode = 3

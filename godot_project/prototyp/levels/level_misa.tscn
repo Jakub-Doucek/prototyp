@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dn286o6ngkeg2"]
+[gd_scene load_steps=18 format=3 uid="uid://dn286o6ngkeg2"]
 
 [ext_resource type="Script" uid="uid://bs488lmrq4l78" path="res://levels/level.gd" id="1_2vjdm"]
 [ext_resource type="AudioStream" uid="uid://c04pk66av5oul" path="res://assets/music/aggressive-metal-sinister-111839.mp3" id="2_2vjdm"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://c7i5bx0ckjrow" path="res://assets/components/gothic/gik_corner_stair_1_004_14.tscn" id="8_tkku1"]
 [ext_resource type="PackedScene" uid="uid://cbdwdib2q1mqg" path="res://assets/next_level_portal/next_level_portal.tscn" id="9_7wlau"]
 [ext_resource type="PackedScene" uid="uid://d23s8ywe8qgpj" path="res://assets/components/gothic/fence_1_001_7.tscn" id="9_m8tp6"]
+[ext_resource type="PackedScene" uid="uid://cdhd3yo6t72mf" path="res://levels/level_natka.tscn" id="14_jfty2"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_t7c8s"]
 panorama = ExtResource("5_1h3l8")
@@ -107,7 +108,7 @@ transform = Transform3D(-0.999924, 1.0787242e-09, 0.012339165, -1.15463195e-14, 
 use_collision = true
 size = Vector3(3.2267303, 1, 9.901855)
 
-[node name="gik_long_stair_1_13" type="Node3D" parent="terrain" instance=ExtResource("6_1h3l8")]
+[node name="gik_long_stair_1_13" parent="terrain" instance=ExtResource("6_1h3l8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2797604, -0.7, 1.0298576)
 
 [node name="gik_long_stair_1_14" parent="terrain" instance=ExtResource("6_1h3l8")]
@@ -122,13 +123,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7202396, -0.7, 1.0298576)
 [node name="gik_long_stair_1_17" parent="terrain" instance=ExtResource("6_1h3l8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.72024, -0.7, 1.0298576)
 
-[node name="emperor" type="Node3D" parent="terrain" instance=ExtResource("7_jfty2")]
+[node name="emperor" parent="terrain" instance=ExtResource("7_jfty2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3, -9)
 
-[node name="gik_corner_stair_1_004_14" type="Node3D" parent="terrain" instance=ExtResource("8_tkku1")]
+[node name="gik_corner_stair_1_004_14" parent="terrain" instance=ExtResource("8_tkku1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, -2, 1)
 
-[node name="fence_1_001_7" type="Node3D" parent="terrain" instance=ExtResource("9_m8tp6")]
+[node name="fence_1_001_7" parent="terrain" instance=ExtResource("9_m8tp6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -8)
 
 [node name="Frame1" parent="." instance=ExtResource("6_jfty2")]
@@ -153,6 +154,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.4, 2.4, 0.8999996)
 [node name="NextLevelPortal" parent="." instance=ExtResource("9_7wlau")]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 0, -5)
+next_level = ExtResource("14_jfty2")
 
 [node name="LevelUI" type="Control" parent="."]
 layout_mode = 3

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cf708hetdw54g"]
+[gd_scene load_steps=14 format=3 uid="uid://cf708hetdw54g"]
 
 [ext_resource type="Script" uid="uid://bs488lmrq4l78" path="res://levels/level.gd" id="1_tiq2w"]
 [ext_resource type="AudioStream" uid="uid://cn7ryin2wpj4i" path="res://assets/music/aggressive-techno-409194.mp3" id="2_apjrq"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dj3aeqdj51jmj" path="res://assets/components/gothic/slope_007_1.tscn" id="7_ubbdx"]
 [ext_resource type="PackedScene" uid="uid://bh4em1fbetqpx" path="res://assets/final_area/final_area.tscn" id="8_klsfu"]
 [ext_resource type="PackedScene" uid="uid://cbdwdib2q1mqg" path="res://assets/next_level_portal/next_level_portal.tscn" id="9_r7ccj"]
+[ext_resource type="PackedScene" uid="uid://cnftvayx00r6y" path="res://levels/level_radovan.tscn" id="10_apjrq"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_t7c8s"]
 panorama = ExtResource("5_tiq2w")
@@ -221,6 +222,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.6, 0.4, 22.9)
 [node name="NextLevelPortal" parent="." instance=ExtResource("9_r7ccj")]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.000001, 0, -4)
+next_level = ExtResource("10_apjrq")
 
 [node name="LevelUI" type="Control" parent="."]
 layout_mode = 3

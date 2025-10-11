@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://bcwpfd3hrlp4x"]
+[gd_scene load_steps=19 format=3 uid="uid://bcwpfd3hrlp4x"]
 
 [ext_resource type="Script" uid="uid://bs488lmrq4l78" path="res://levels/level.gd" id="1_hmr0l"]
 [ext_resource type="AudioStream" uid="uid://c04pk66av5oul" path="res://assets/music/aggressive-metal-sinister-111839.mp3" id="2_hmr0l"]
@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://q16aggykdbpd" path="res://assets/components/gothic/statue_2_16.tscn" id="9_7h8hb"]
 [ext_resource type="PackedScene" uid="uid://cbdwdib2q1mqg" path="res://assets/next_level_portal/next_level_portal.tscn" id="9_q8w0i"]
 [ext_resource type="PackedScene" uid="uid://bsfpde74v4ouv" path="res://assets/components/gothic/cube_006_20.tscn" id="10_q8w0i"]
+[ext_resource type="PackedScene" uid="uid://bsds06dmjayr3" path="res://levels/level_anna.tscn" id="15_fdc6l"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_t7c8s"]
 panorama = ExtResource("5_riv08")
@@ -206,6 +207,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.599998, -4.6, 47.9)
 [node name="NextLevelPortal" parent="." instance=ExtResource("9_q8w0i")]
 unique_name_in_owner = true
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 61, -5, 49)
+next_level = ExtResource("15_fdc6l")
 
 [node name="LevelUI" type="Control" parent="."]
 layout_mode = 3

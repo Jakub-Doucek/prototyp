@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://c5g50oo6ajvhn"]
+[gd_scene load_steps=22 format=3 uid="uid://c5g50oo6ajvhn"]
 
 [ext_resource type="Script" uid="uid://bs488lmrq4l78" path="res://levels/level.gd" id="1_rswsh"]
 [ext_resource type="AudioStream" uid="uid://bxincuxtlhr1e" path="res://assets/music/relaxing-electronic-ambient-music-354471.mp3" id="2_rswsh"]
@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://d23s8ywe8qgpj" path="res://assets/components/gothic/fence_1_001_7.tscn" id="9_kuufx"]
 [ext_resource type="PackedScene" uid="uid://cbdwdib2q1mqg" path="res://assets/next_level_portal/next_level_portal.tscn" id="9_pnauv"]
 [ext_resource type="PackedScene" uid="uid://q16aggykdbpd" path="res://assets/components/gothic/statue_2_16.tscn" id="10_2nluv"]
+[ext_resource type="PackedScene" uid="uid://cy7dr2hv22ihh" path="res://levels/level_mikolas.tscn" id="18_fk145"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_t7c8s"]
 panorama = ExtResource("5_1nrtq")
@@ -135,6 +136,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.6, 0.4, 22.9)
 [node name="NextLevelPortal" parent="." instance=ExtResource("9_pnauv")]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.000001, 0, 29.299997)
+next_level = ExtResource("18_fk145")
 
 [node name="LevelUI" type="Control" parent="."]
 layout_mode = 3

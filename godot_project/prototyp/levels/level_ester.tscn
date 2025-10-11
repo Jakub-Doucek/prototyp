@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://blsklxy3a5ola"]
+[gd_scene load_steps=14 format=3 uid="uid://blsklxy3a5ola"]
 
 [ext_resource type="Script" uid="uid://bs488lmrq4l78" path="res://levels/level.gd" id="1_lmjfc"]
 [ext_resource type="AudioStream" uid="uid://c04pk66av5oul" path="res://assets/music/aggressive-metal-sinister-111839.mp3" id="2_fd4fe"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cpd7gj1k4dbvk" path="res://assets/skyboxes/Skyboxes/AllSkyFree_Sky_OvercastLow_Equirect.png" id="5_fd4fe"]
 [ext_resource type="PackedScene" uid="uid://1ld63fyau6gx" path="res://assets/frames/frame01/frame01.tscn" id="7_o1282"]
 [ext_resource type="PackedScene" uid="uid://dj3aeqdj51jmj" path="res://assets/components/gothic/slope_007_1.tscn" id="8_g7eju"]
+[ext_resource type="PackedScene" uid="uid://pnxvah7vnxhm" path="res://levels/level_filip.tscn" id="10_4h1ir"]
 [ext_resource type="PackedScene" uid="uid://bh4em1fbetqpx" path="res://assets/final_area/final_area.tscn" id="11_r4f7a"]
 [ext_resource type="PackedScene" uid="uid://cbdwdib2q1mqg" path="res://assets/next_level_portal/next_level_portal.tscn" id="12_5bk8h"]
 
@@ -100,6 +101,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 155.6, -5.4, 35.9)
 [node name="NextLevelPortal" parent="." instance=ExtResource("12_5bk8h")]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.000001, 0, -4)
+next_level = ExtResource("10_4h1ir")
 
 [node name="LevelUI" type="Control" parent="."]
 layout_mode = 3

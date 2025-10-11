@@ -76,6 +76,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.799999, 0, 17.8)
 [node name="fence_1_001_14" parent="terrain" instance=ExtResource("6_aedk1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.199999, 0, 17.8)
 
+[node name="Character" parent="." instance=ExtResource("3_6r62q")]
+unique_name_in_owner = true
+transform = Transform3D(-1.0000001, 0, -2.9802322e-08, 0, 1, 0, 2.9802322e-08, 0, -1.0000001, 12.421736, 1.0000019, 13.723686)
+
 [node name="LevelUI" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 15
@@ -100,7 +104,3 @@ offset_bottom = -43.0
 grow_horizontal = 0
 grow_vertical = 0
 theme_override_font_sizes/font_size = 25
-
-[node name="Character" parent="." instance=ExtResource("3_6r62q")]
-unique_name_in_owner = true
-transform = Transform3D(-1.0000001, 0, -2.9802322e-08, 0, 1, 0, 2.9802322e-08, 0, -1.0000001, 12.421736, 1.0000019, 13.723686)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://pnxvah7vnxhm"]
+[gd_scene load_steps=13 format=3 uid="uid://pnxvah7vnxhm"]
 
 [ext_resource type="Script" uid="uid://bs488lmrq4l78" path="res://levels/level.gd" id="1_rg3qm"]
 [ext_resource type="AudioStream" uid="uid://bnluefop1tfw0" path="res://assets/music/happy-kids-music-background-378309.mp3" id="2_rg3qm"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cpd7gj1k4dbvk" path="res://assets/skyboxes/Skyboxes/AllSkyFree_Sky_OvercastLow_Equirect.png" id="5_croxx"]
 [ext_resource type="PackedScene" uid="uid://1ld63fyau6gx" path="res://assets/frames/frame01/frame01.tscn" id="6_x2kwq"]
 [ext_resource type="PackedScene" uid="uid://bh4em1fbetqpx" path="res://assets/final_area/final_area.tscn" id="8_ptdl4"]
+[ext_resource type="PackedScene" uid="uid://bme6bhuw4s1xr" path="res://levels/level_gabriel.tscn" id="8_rg3qm"]
 [ext_resource type="PackedScene" uid="uid://cbdwdib2q1mqg" path="res://assets/next_level_portal/next_level_portal.tscn" id="9_gbajc"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_t7c8s"]
@@ -90,6 +91,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.6, 0.4, 22.9)
 [node name="NextLevelPortal" parent="." instance=ExtResource("9_gbajc")]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.000001, 0, -4)
+next_level = ExtResource("8_rg3qm")
 
 [node name="Portal" parent="NextLevelPortal" index="1"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 2, 1.3000001, 0)
